@@ -1,0 +1,42 @@
+{
+    "schemaVersion": "1",
+   "deviceConnectionString" : "Set Resin Device Variable <AZ_IOT_EDGE_DEV_CONN> with Azure Iot Edge Device Connection String as value",
+    "homeDir": "/data/azure-iotedge-runtime",
+    "configDir": "/data/azure-iotedge-runtime/config",
+    "hostName": "resinedge",
+    "logLevel": "info",
+    "upstreamProtocol": "Amqp",
+    "security": {
+    "certificates": {
+        "option": "selfSigned",
+        "selfSigned": {
+        "forceNoPasswords": true,
+        "deviceCAPassphraseFilePath": "",
+        "agentCAPassphraseFilePath": ""
+        },
+        "subject": {
+        "countryCode": "US",
+        "state": "Washington",
+        "locality": "Redmond",
+        "organization": "Default Edge Organization",
+        "organizationUnit": "Edge Unit",
+        "commonName": "Edge Device CA"
+        }
+    }
+    },
+    "deployment": {
+    "type": "docker",
+    "docker": {
+        "uri": "unix:///var/run/balena.sock",
+        "edgeRuntimeImage": "local/azure-iotedge-runtime-resin:latest",
+        "registries": [
+        ],
+        "loggingOptions": {
+        "log-driver": "json-file",
+        "log-opts": {
+            "max-size": "10m"
+        }
+        }
+    }
+    }
+}

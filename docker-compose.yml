@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  iotedge:
+    build:
+      context: ./iotedge
+    restart: 'yes'
+    pid: "host"
+    volumes: 
+        - 'resin-data:/data'
+
+    labels:
+      io.resin.features.balena-socket: '1'
+
+# persistent for reboot:
+volumes: 
+    resin-data:
