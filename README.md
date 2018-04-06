@@ -12,7 +12,7 @@ Sample Application for deploying Microsoft Azure Edge functionality on a resin.i
 * Subscribe to Device to Cloud (D2C) Messages on your IoT Hub and check if data is arriving
 
 ## Known issues
-* Check docker storage-drivers on your system. This example is working with 'aufs'. For 'overlay2' resin base image has to be modified.
+* Check docker storage-drivers on your system. This example is working with 'aufs'. For 'overlay2' resin base image has to be modified. (if you use resin-in-container)
 * Check your firewall settings for AMQP-Connections (Port 5671). There should be a fallback in edgeAgent to WebSocket 443 (did not try)
 
 
