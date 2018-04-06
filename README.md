@@ -18,4 +18,5 @@ Sample Application for deploying Microsoft Azure Edge functionality on a resin.i
 
 ## Acknowledgements
 [Resin.io](https://docs.resin.io/learn/develop/multicontainer/)
+
 [Microsoft Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/)

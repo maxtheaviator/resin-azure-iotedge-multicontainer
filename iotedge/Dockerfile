@@ -10,7 +10,7 @@ COPY ./azure-iotedge-runtime /azure-iotedge-runtime
 # Install balena & create docker "symlink" 
 RUN apt-get install -y curl
 RUN curl -sfL https://balena.io/install.sh | sh
-COPY ./azure-iotedge-runtime/docker /usr/local/bin
+COPY docker /usr/local/bin
 RUN chmod +x /usr/local/bin/docker
 
 # Install azure-iot-edge-runtime-ctl
