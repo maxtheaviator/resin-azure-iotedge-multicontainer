@@ -1,3 +1,5 @@
+[Deprecated - IoT Edge V1]
+
 # Resin and Microsoft Azure IoT Edge
 
 Sample Application for deploying Microsoft Azure Edge functionality on a resin.io multicontainer device.
